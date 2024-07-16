@@ -67,10 +67,10 @@ func detectLanguage(code string) string {
 }
 
 func main() {
-	// Open the input file
+	// Open the inputTheEmailAdresses.txt file
 	inputFile, err := os.Open("inputdetectLanguage.txt")
 	if err != nil {
-		fmt.Println("Error opening input file:", err)
+		fmt.Println("Error opening inputTheEmailAdresses.txt file:", err)
 		return
 	}
 	defer inputFile.Close()
